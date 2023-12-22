@@ -1,0 +1,21 @@
+/* Styles for the entire body, including the background image */
+body {
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* Background Image Styling */
+    background-image: url('Images/backgroundImage.jpg'); /* Update with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fix the background */
+    background-position: center center; /* Center the background image */
+    background-color: #202020; /* Background color while image is loading or if it fails to load */
+}
+
+/* Styles for the centered content */
+.centered-content {
+    text-align: center; /* Center text elements */
+    /* Add more styles for your content as needed */
+}
