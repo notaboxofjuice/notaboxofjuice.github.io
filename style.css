@@ -1,21 +1,69 @@
-/* Styles for the entire body, including the background image */
+/* Styles for the entire body */
 body {
-    height: 100vh; /* Full height of the viewport */
+    min-height: 100vh; /* Full height of the viewport */
     margin: 0; /* Remove default margin */
     display: flex; /* Enables flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    /* Background Image Styling */
-    background-image: url('Images/backgroundImage.jpg'); /* Update with your image path */
-    background-size: cover; /* Cover the entire viewport */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-attachment: fixed; /* Fix the background */
-    background-position: center center; /* Center the background image */
-    background-color: #202020; /* Background color while image is loading or if it fails to load */
+    flex-direction: column; /* Aligns children vertically */
+    background-color: #202020;
+}
+
+/* Styles for the header */
+header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
 }
 
 /* Styles for the centered content */
 .centered-content {
     text-align: center; /* Center text elements */
-    /* Add more styles for your content as needed */
+    color: #FFFFFF; /* Text color */
+    font-family: 'Ubuntu Mono', monospace; /* Font family */
+    max-width: 512px; /* Maximum width of the content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 32px; /* Padding around the content */
+}
+
+/* Styles for the socials bar */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px;
+}
+.socials .icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.socials .icon img {
+    width: auto;
+    height: 100%;
+}
+
+/* Styles for About section */
+.about {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.about blockquote {
+    border-left: 3px solid #ccc; /* The vertical line characteristic of markdown quotes */
+    margin: 1em 10px; /* Spacing around the quote */
+    padding-left: 10px; /* Space between the line and the text */
+    color: #ccc;
+    font-style: italic;
+}
+
+
+/* Styles for Projects section */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between projects */
+}
 }
