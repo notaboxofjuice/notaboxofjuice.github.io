@@ -25,6 +25,11 @@ header {
     padding: 16px;
 }
 
+header a { /* For adding interactable header elements without visible formatting */
+    color: inherit; /* Inherit color from regular header */
+    text-decoration: none; /* no underlines */
+}
+
 /* Styles for the centered content */
 .centered-content {
     text-align: center; /* Center text elements */
