@@ -54,7 +54,7 @@ header {
 }
 .socials .icon {
     display: block;
-    max-width: 32px;
+    max-width: 100%;
     max-height: 32px;
 }
 .socials .icon img {
@@ -86,15 +86,15 @@ header {
 .project-gallery img {
     max-width: 128px;
     height: auto;
-    margin: 4px;
-    padding: 4px;
-    border-radius: 4px;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 2px;
     box-shadow: 0 0 0 0 white;
 }
 
 @media (max-width: 512px) {
     .centered-content {
         max-width: 90%;
-        padding: 10px;
+        padding: 8px;
     }
 }
