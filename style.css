@@ -1,9 +1,10 @@
 /* Styles for the nav bar */
 nav {
     font-family: 'Ubuntu Mono', monospace;
+    position: sticky;
+    top: 0;
     left: 0;
     width: 100vw;
-    position: relative;
     background-color: #3B3B3B;
     overflow: hidden;
     display: flex;
@@ -53,8 +54,18 @@ header {
     padding: 16px;
 }
 
-/* Style for interactible headers */
-.interactible-header { /* For adding interactable header elements without visible formatting */
+/* Styles for all paragraphs */
+p {
+    line-height: 1.5;
+}
+
+/* Styles for all list items */
+li {
+    line-height: 1.5;
+}
+
+/* Style for interactable headers */
+.interactable-header { /* For adding interactable header elements without visible formatting */
     color: inherit; /* Inherit color from regular header */
     text-decoration: none; /* no underlines */
 }
@@ -64,7 +75,7 @@ header {
     text-align: center; /* Center text elements */
     color: #FFFFFF; /* Text color */
     font-family: 'Ubuntu Mono', monospace; /* Font family */
-    max-width: 512px; /* Maximum width of the content */
+    max-width: 75%; /* Maximum width of the content */
     margin: 0 auto; /* Center horizontally */
 }
 
@@ -115,9 +126,33 @@ header {
     box-shadow: 0 0 0 0 white;
 }
 
-@media (max-width: 512px) {
-    .centered-content {
-        max-width: 90%;
-        padding: 8px;
-    }
+/* Styles for figures on experience page */
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience img {
+    max-width: 128px;
+    max-height: 128px;
+    float: left;
+    padding: 32px;
+}
+
+.experience figcaption {
+    text-align: left;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills p {
+    flex: 1;
+    margin: 4px;
+    padding: 4px;
+    flex-basis: 20%;
 }
