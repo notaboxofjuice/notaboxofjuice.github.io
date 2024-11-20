@@ -1,3 +1,26 @@
+/* Styles for the nav bar */
+nav {
+    font-family: 'Ubuntu Mono', monospace;
+    left: 0;
+    width: 100vw;
+    position: relative;
+    background-color: #3B3B3B;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #202020;
+    background-color: white;
+}
+
 /* Styles for the entire body */
 body {
     min-height: 100vh; /* Full height of the viewport */
