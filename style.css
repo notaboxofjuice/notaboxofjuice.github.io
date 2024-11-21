@@ -129,18 +129,22 @@ li {
 /* Styles for figures on experience page */
 .experience {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+    width: 100%;
 }
 .experience img {
     max-width: 128px;
     max-height: 128px;
-    float: left;
     padding: 32px;
+    flex-shrink: 0;
 }
 
 .experience figcaption {
     text-align: left;
+    flex-grow: 1;
 }
 
 .skills {
@@ -148,11 +152,13 @@ li {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .skills p {
-    flex: 1;
+    flex: 0 1 20%;
     margin: 4px;
     padding: 4px;
-    flex-basis: 20%;
+    text-align: center;
 }
